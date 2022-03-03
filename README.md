@@ -1,5 +1,5 @@
 # Javascript-Course-Smilga
-##Excercises and notes from Smilga's JavaScript Course
+## Excercises and notes from Smilga's JavaScript Course
 
 Helper Methods
 
