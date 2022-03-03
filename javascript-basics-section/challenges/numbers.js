@@ -17,4 +17,4 @@ console.log(remainingPlates);
 remainingPlates += 1;
 console.log(remainingPlates);
 // create message variable and display
-console.log("There are " + remainingPlates + " plates available ");
+console.log("There are " + remainingPlates + " plates available. ");

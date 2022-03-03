@@ -118,16 +118,102 @@ console.log(div); */
 // console.log(number3);
 
 /* 32. ADDITIONAL NUMBER OPERATORS */
-let number = 40;
-number += 5;
-number += 5;
-number += 5;
-number += 5;
-number += 5;
+// let number = 40;
+// number += 5;
+// number += 5;
+// number += 5;
+// number += 5;
+// number += 5;
 
-const slices = 10;
-const children = 3;
-const amount = slices % children;
+// const slices = 10;
+// const children = 3;
+// const amount = slices % children;
 
-console.log(number);
-console.log(amount);
+// console.log(number);
+// console.log(amount);
+
+/* 35. IMPLICIT TYPE CONVERSIONS */
+// const name = "john";
+// const lastName = "jordan";
+// const fullName = name + " " + lastName;
+// console.log(fullName);
+
+// const number = 4;
+// const number2 = 10;
+// const result = number + number2;
+// console.log(result);
+
+// const value = name - lastName;
+// console.log(value);
+
+// let number3 = "10";
+// let number4 = "23";
+// const result2 = number3 - number4;
+// console.log(result2);
+
+// 36. DATE TYPES
+
+// Primitive data types - String, Number, Boolean, Null, Undefined, Symbol
+// Object - Arrays, Functions, Objects
+
+// typeof - operator (typeof variable) (typeof value);
+
+//String
+// const text = "some text";
+// //Number
+// const number = 45;
+// //Boolean
+// let value1 = true;
+// let value2 = false;
+// //Null
+// const value3 = null; //null is null. null is not an object. this is a bug.
+// // Undefined
+// let value4;
+
+// console.log(typeof text);
+// console.log(typeof number);
+// console.log(typeof value1, typeof value2);
+// console.log(typeof String);
+// console.log(typeof value3);
+// console.log(typeof value4);
+
+//37. ARRAYS
+// Arrays, Function and Objects
+// Arrays - [], 0 index based
+
+// const friend1 = "anna";
+// const friend2 = "anna";
+// const friend3 = "anna";
+// const friend4 = "anna";
+
+// const friends = ["romeo", "clayton", "jeremiah"];
+// console.log(friends);
+// console.log(friends.indexOf("romeo"));
+
+//39. FUNCTIONS- Declare, Invoke
+
+//keyword name parameters
+// function hello() {
+//   console.log("Hello There Bob");
+//   console.log("Hello There John");
+//   console.log("Hello There Susy");
+// }
+
+// hello();
+// hello();
+// hello();
+
+//40. FUNCTION parameters and arguments
+
+// function hello(name) {
+//   console.log("Hello There " + name);
+// }
+
+// // greet bob
+// hello("Bob");
+// //greet anna
+// hello("Anna");
+// // greet susy
+// hello("Susy");
+
+// 41. FUNCTION return
