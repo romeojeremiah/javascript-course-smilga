@@ -1,6 +1,8 @@
 # Javascript-Course-Smilga
 ## Excercises and notes from Smilga's JavaScript Course
 
+3/2
+
 Helper Methods
 
 Statements and comments
