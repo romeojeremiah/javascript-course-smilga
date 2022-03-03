@@ -216,4 +216,90 @@ console.log(div); */
 // // greet susy
 // hello("Susy");
 
-// 41. FUNCTION return
+// 41. FUNCTION RETURN
+
+// all functions by default return "undefined" if there is no
+// returned value;
+
+// 42. FUNCTION EXPRESSIONS
+
+// function defintion/declation
+// function addValues(num1, num2) {
+//   return num1 + num2;
+// }
+
+// // function expression // this is an anonymous function
+// const add = function adder(num1, num2) {
+//   return num1 + num2;
+// };
+
+// console.log(add(2, 3));
+
+// 44. OBJECTS
+
+// Objects - key/value pairs methods
+// dot notation
+
+// const person = {
+//   name: "romeo",
+//   lastName: "the coder",
+//   age: 40,
+//   education: false,
+//   married: true,
+//   siblings: ["anny", "susan", "peter"],
+//   greeting: function () {
+//     console.log("hello", this.name);
+//   },
+// };
+
+// let age = person.age;
+// console.log(age == person.age);
+// console.log(person.name);
+// console.log(person.siblings[0]);
+// person.greeting();
+
+//46. CONDITIONAL STATEMENTS
+
+// >, <, >=, <=, ==, ===, !=, !==
+// if (2 > 1) {
+//   console.log("hello world");
+// }
+// == checks only value
+// === checks value and type
+
+// const num1 = 6;
+// const num2 = "6";
+// const value = num1 === num2;
+// console.log(typeof num1);
+// console.log(typeof num2);
+// console.log(value);
+
+//49. LOGICAL OPERATORS
+// (|| - OR), (&& - AND), !
+// const name = "bob";
+// const age = 24;
+
+// if (name === "bob" || age === 24) {
+//   console.log("hello there user");
+// } else {
+//   console.log("wrong values");
+// }
+
+//50. SWITCH STATEMENTS
+// Another way to basically write an if or else
+
+// const dice = 1;
+
+// switch (dice) {
+//   case 1:
+//     console.log("got it");
+//     break;
+//   case 2:
+//     console.log("nope");
+//     break;
+//   default:
+//     console.log("default case");
+// }
+
+//52-54. LOOPS
+// while loop, do while loop, for loop
