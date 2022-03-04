@@ -60,5 +60,5 @@ Ternary Operator
 
 Global Scope vs. Local Scope
 
-Variable Hoisting
+Variable Lookup
 
