@@ -62,3 +62,18 @@ Global Scope vs. Local Scope
 
 Variable Lookup
 
+Callback Funcions, Higher Order Functions
+
+Array Iterators
+
+Foreach
+
+Map
+
+Filter
+
+Find
+
+Reduce
+
+
