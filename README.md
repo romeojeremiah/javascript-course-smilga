@@ -46,5 +46,19 @@ Switch Statements
 
 Loops
 
+Template Literals
 
+Array Properties and Methods
+
+Reference vs Value
+
+Null and Undefined
+
+Truthy and Falsy Values
+
+Ternary Operator
+
+Global Scope vs. Local Scope
+
+Variable Hoisting
 
