@@ -238,3 +238,20 @@ so any changes will affect all the references */
 // }, 0);
 
 // console.log("totalSalary", totalSalary);
+
+//86. MATH OBJECT
+
+// Standard built-in objects - always available
+
+// const number = 4.56789;
+// const result = Math.floor(number);
+// const result2 = Math.ceil(number);
+
+// console.log(result, result2);
+
+//87. DATE OBJECT
+
+const date = new Date("1/12/15");
+console.log(date);
+
+//
