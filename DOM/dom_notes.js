@@ -82,4 +82,61 @@
 // last.textContent = "I now have attributes";
 
 // 101. CLASSLIST AND CLASSNAME
-const third = d;
+// const third = document.getElementById("third");
+// third.classList.add("colors");
+// third.classList.add("text");
+// const first = document.getElementById("first");
+// console.log(first.classList);
+// if (!first.classList.contains("colors")) {
+//   first.classList.add("text");
+// }
+
+//102. ADDING ELEMENTS DYNAMICALLY
+// createElement("element");
+// createTextNode();
+// element.appendChild(childElement);
+
+// const result = document.querySelector("#result");
+
+// // create empty element
+
+// const bodyDiv = document.createElement("div");
+// console.log(bodyDiv);
+// // create text node
+
+// const text = document.createTextNode("a simple body div");
+// console.log(text);
+
+// bodyDiv.appendChild(text);
+// //document.body.appendChild(bodyDiv);
+
+// const h1 = document.createElement("h1");
+// const text2 = document.createTextNode("I was dynamically created");
+// h1.appendChild(text2);
+// console.log(h1.textContent);
+// result.appendChild(h1);
+// h1.classList.add("blue");
+// console.log(result.children);
+
+// //103. INSERTBEFORE
+// document.body.insertBefore(bodyDiv, result);
+// const firstHead = document.querySelector(".blue");
+// document.body.insertBefore(firstHead, result);
+// //104. REPLACE CHILD
+// //replaceChild('new', 'old')
+
+// const h6 = document.createElement("h6");
+// h6.textContent = "hello world";
+// console.log(h6);
+// document.body.insertBefore(h1, result);
+// console.log(document.body.children[0]);
+// document.body.replaceChild(document.body.children[0], firstHead);
+
+// 105. prepend innerText
+// prepend
+// innterText
+// const heading = document.createElement("h2");
+// heading.innerText = "i am a dynamic heading";
+// const firstHeading = document.getElementsByTagName("h1");
+// console.log(firstHeading);
+// firstHeading[0].prepend(heading);
