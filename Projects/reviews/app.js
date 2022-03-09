@@ -37,10 +37,11 @@ const info = document.querySelector("#info");
 let reviewsIndex = 0;
 
 function changeAttributes(reviewsIndex) {
-    personImg.attributes.src.value = reviews[reviewsIndex].img;
-    author.textContent = reviews[reviewsIndex].name;
-    job.textContent = reviews[reviewsIndex].job;
-    info.textContent = reviews[reviewsIndex].text;
+    const item = reviews[reviewsIndex];
+    personImg.attributes.src.value = item.img;
+    author.textContent = item.name;
+    job.textContent = item.job;
+    info.textContent = item.text;
 }
 
 //set initial review
