@@ -67,7 +67,7 @@
 // keydown - when key is down
 // keyup - when key is released
 
-// EVENT OBJECT
+// 114. EVENT OBJECT
 
 // event object argument e, evt
 // info about trigger event
@@ -76,6 +76,14 @@
 // this keyword
 // preventDefault() - prevents default behavior
 
+// const btn = document.querySelector("#btn");
+
+// function bobo(bobob) {
+//     console.log(bobob);
+//     bobob.preventDefault();
+// }
+// btn.addEventListener("click", bobo);
+
 //115. TARGET VS> CURRENT TARGET
 
 //event.currentTarget - always refers to the element to which the event
@@ -83,9 +91,38 @@
 
 //event.target - identifies the element on which the event occured
 
+// const pTags = document.querySelectorAll("p");
+
+// pTags.forEach(function (pTag) {
+//     pTag.addEventListener("click", function (e) {
+//         console.log(e.currentTarget);
+//         e.currentTarget.classList.toggle("blue");
+//         console.log(e.target);
+//         e.target.classList.toggle("red");
+//     });
+// });
+
 //116 EVENT PROPAGATION - BUBBLING CAPTURING
 
 // allows select dynamic elements
+
+//event propagation - order the events are fired
+
+//event bubbling - cicked element first then bubbles up -- default
+
+// event capturing - fires at the root and fires until reaches target
+// for event capturing, add a third argument to addEventListener ('click', function, {capture: true})
+
+// const container = document.querySelector(".container");
+// const list = document.querySelector(".list-items");
+
+// // list.addEventListener("click", function (e) {
+// //     console.log(e.currentTarget);
+// // });
+
+// container.addEventListener("click", function (e) {
+//     console.log(e.target);
+// });
 
 //118. FORMS
 
