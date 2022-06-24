@@ -180,6 +180,15 @@
 // fruits.push("orange");
 // localStorage.setItem("fruits", JSON.stringify(fruits));
 
+let storageValues;
+
+if (localStorage.getItem("storageValues")) {
+    storageValues = JSON.parse(localStorage.getItem("storageValues"));
+} else {
+    storageValues = [];
+}
+storageValues.push("value one");
+localStorage.setItem("storageValues", JSON.stringify(storageValues));
 //121. setTimeout
 
 /*
