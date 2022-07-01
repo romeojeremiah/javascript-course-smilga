@@ -82,19 +82,26 @@ const menu = [
 ];
 
 const menuSection = document.querySelector(".menu-items");
-const filterBtns = document.querySelectorAll(".btn-filter");
+const btnContainer = document.querySelector(".btn-container");
 
 window.addEventListener("DOMContentLoaded", function () {
+    //get all menu items for initial load
     let menuItems = getItems(menu);
-
+    displayItems(menuItems);
+    //display dynamic filter buttons
     displayfilterBtns();
-
+    //select displayed filter buttons to set up dynamic filtering
+    const filterBtns = document.querySelectorAll(".btn-filter");
+    //add event listeners to set up filtering on each button
     filterBtns.forEach(function (btn) {
         btn.addEventListener("click", function (e) {
+            //if filter button includes all, show all items
             if (e.currentTarget.dataset.id === "all") {
                 const allItems = getItems(menu);
                 displayItems(allItems);
-            } else {
+            }
+            // filter through and show only the items that are selected
+            else {
                 const filteredMenu = menu.filter(function (item) {
                     if (e.currentTarget.dataset.id === item.category) {
                         return item;
@@ -105,35 +112,29 @@ window.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-    menuSection.innerHTML = menuItems;
 });
 
-// function displayfilterBtns() {
-//     const categories = menu.reduce(function (prev, curr) {
-//         if (!prev.includes(curr.category)) {
-//             prev += `<button type="button" class="btn btn-filter" data-id="${curr.category}">
-//                     ${curr.category}
-//                 </button>`;
-//         }
-//         // console.log(prev);
-//         return prev;
-//     }, "all");
-//     console.log(categories);
-// }
-
 function displayfilterBtns() {
-    let filteredBtns = "";
-
-    menu.filter(function (item) {
-        if (item.category === "all") {
-            filteredBtns += `<button type="button" class="btn btn-filter" data-id="${curr.category}">
-                    ${curr.category}
+    const categories = menu.reduce(
+        function (prev, curr) {
+            if (!prev.includes(curr.category)) {
+                prev.push(curr.category);
+            }
+            return prev;
+        },
+        ["all"]
+    );
+    const btns = categories
+        .map(function (category) {
+            return `<button type="button" class="btn btn-filter" data-id="${category}">
+                    ${category}
                 </button>`;
-        }
-    });
-    console.log(filteredBtns);
+        })
+        .join("");
+    btnContainer.innerHTML = btns;
 }
 
+//function to add all HTML menu items to the menu HTML section
 function displayItems(items) {
     menuSection.innerHTML = items;
 }
