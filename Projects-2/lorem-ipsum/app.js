@@ -21,7 +21,6 @@ btn.addEventListener("click", function () {
     } else {
         for (let i = 0; i <= output - 1; i++) {
             let random = Math.floor(Math.random() * lorem.length);
-            console.log(random);
             paragraphs.push(`<p class="text">${lorem[random]}</p>`);
         }
         inputValue.value = "";
