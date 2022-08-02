@@ -4,7 +4,6 @@ import { toggleLoading } from "./toggleLoading.js";
 const container = get(".single-drink");
 
 const displaySingleDrink = (drink) => {
-    console.log(drink);
     toggleLoading("hide-loading");
     const {
         strDrinkThumb: image,
@@ -25,6 +24,8 @@ const displaySingleDrink = (drink) => {
             return `<li><i class="far fa-check-square"></i>${ingredient}</li>`;
         })
         .join("");
+
+    document.title = name;
 
     container.innerHTML = `<img src="${image}" class="drink-img" alt="" />
             <article class="drink-info">
