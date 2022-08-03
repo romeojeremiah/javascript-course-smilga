@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #f1f5f8;
+    --color-title: #102a42;
+    --color-primary: #617da5;
+    --color-secondary: #49a6e9;
+    --color-tertiary: #8bcbf9;
+    --spacing: 2px;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--color-primary);
+    font-family: "Roboto", sans-serif;
+}
+
+.section-center {
+    margin: 5rem auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+.header {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.title {
+    color: var(--color-title);
+    font-size: 3rem;
+    letter-spacing: var(--spacing);
+}
+
+.underline {
+    width: 125px;
+    height: 4px;
+    background-color: var(--color-secondary);
+    margin: 5px auto;
+}
+
+.card-container {
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px gainsboro;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-img {
+    width: 125px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 1rem;
+    letter-spacing: var(--spacing);
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+.btn-profile {
+    font-size: 0.75rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    background-color: var(--color-secondary);
+    text-transform: uppercase;
+    letter-spacing: var(--spacing);
+    padding: 8px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn-prev,
+.btn-next {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-number {
+    background-color: var(--color-tertiary);
+    font-size: 0.83rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+}
+
+.btn-number.btn-active {
+    background-color: #102a42;
+    color: white;
+}
